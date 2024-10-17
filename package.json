@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy:gh" :"ng build --base-href='https://rama0534.github.io/followers-app/' && sudo ngh"
   },
   "private": true,
   "dependencies": {
