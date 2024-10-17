@@ -1,0 +1,14 @@
+<div>
+    <input type="text" [(ngModel)]="username" placeholder="Enter GitHub username" />
+    <button (click)="fetchFollowers()">Fetch Followers</button>
+</div>
+   
+<ul class="user-list" *ngIf="users.length > 0">
+    <li *ngFor="let user of users" class="user-item">
+      <img [src]="user.avatar_url" alt="User Avatar" class="avatar-img">
+      <div class="user-details">
+        <h5>{{user.login}} </h5>
+        <a [routerLink]="['/followers', user.id]">{{ user.web_url }} <i>{{user.html_url}} </i></a>
+      </div>
+    </li>
+  </ul>

@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.css"; 
+body { padding: 20px;}
+div { padding: 10px;}
+.user-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .avatar-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .user-details h5 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .user-details a {
+    font-size: 0.9em;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .user-details a:hover {
+    text-decoration: underline;
+  }
+  
